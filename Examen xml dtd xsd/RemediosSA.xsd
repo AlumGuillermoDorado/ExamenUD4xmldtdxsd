@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlnsi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+
+<xs:schema>
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="RemediosSA"></xs:element>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="pedido"></xs:element>
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="sucursal"></xs:element>
+                                    <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="codigosucursal" type="xs:string">
+                                            <xs:pattern value="[A-Z],[0-9](7)"></xs:pattern>
+                                        </xs:element>
+                                        <xs:element name="direccionExpo" type="xs:string"></xs:element>
+                                        <xs:element name="direccionGest" type="xs:string"></xs:element>
+                                        <xs:element name="Empleado" type="xs:string"></xs:element>
+                                        <xs:element name="fechaPedido" type="xs:date"></xs:element>
+                                        <xs:element name="observacionesPedido" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                                <xs:element name="articulos"></xs:element>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="codigoarticulo" type="xs:string">
+                                            <xs:pattern value="[A-Z](3)-[0-9](3)"></xs:pattern>
+                                        </xs:element>
+                                        <xs:element name="numUnidades" type="xs:integer"></xs:element>
+                                        <xs:element name="precioUnidad" type="xs:decimal"></xs:element>
+                                        <xs:element name="observacionesProducto" type="xs:string"></xs:element>
+                                        <xs:element name="Trevision" type="xs:integer"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:sequence>
+                </xs:complexType>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,17 @@
+<!ELEMENT RemediosSA (pedido*)>
+<!ELEMENT pedido (sucursal, articulos+)>
+<!ELEMENT sucursal (codigosucursal, direccionExpo, direccionGest, empleado, fechaPedido, observacionesPedido)>
+<!ELEMENT codigosucursal (#PCDATA)>
+<!ATTLIST codigosucursal codigo ID #REQUIRED>
+<!ELEMENT direccionExpo (#PCDATA)>
+<!ELEMENT direccionGest (#PCDATA)>
+<!ELEMENT empleado (#PCDATA)>
+<!ELEMENT fechaPedido (#PCDATA)>
+<!ELEMENT observacionesPedido (#PCDATA)>
+<!ELEMENT articulos (codigoarticulo, numUnidades, precioUnidad, observacionesProducto, Trevision)>
+<!ELEMENT codigoarticulo (#PCDATA)>
+<!ATTLIST codigoarticulo codigo ID #REQUIRED>
+<!ELEMENT numUnidades (#PCDATA)>
+<!ELEMENT precioUnidad (#PCDATA)>
+<!ELEMENT observacionesProducto (#PCDATA)>
+<!ELEMENT Trevision (#PCDATA)>

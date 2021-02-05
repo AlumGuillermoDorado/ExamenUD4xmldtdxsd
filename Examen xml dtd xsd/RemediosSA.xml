@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xmlns:xsi='RemediosSA' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="RemediosSA.xsd">/></xmlns:xsi>
+
+<!DOCTYPE RemediosSA SYSTEM "RemediosSA.dtd">
+
+<RemediosSA>
+    <pedido>
+        <sucursal>
+            <codigosucursal codigo ="A0123456"></codigosucursal>
+            <direccionExpo>Calle Dificultad 9000</direccionExpo>
+            <direccionGest>Calle Felicidad 1</direccionGest>
+            <empleado>Empleado Ejemplo</empleado>
+            <fechaPedido>05-02-2021</fechaPedido>
+            <observacionesPedido>Urgente</observacionesPedido>
+        </sucursal>
+        <articulos>
+            <codigoarticulo codigo ="ABC-123"></codigoarticulo>
+            <numUnidades>450</numUnidades>
+            <precioUnidad>12</precioUnidad>
+            <observacionesProducto>Reacondicionado</observacionesProducto>
+            <Trevision>20</Trevision>
+        </articulos>
+    </pedido>
+</RemediosSA>
